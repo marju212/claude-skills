@@ -1,0 +1,37 @@
+# Downloaded 3rd party libraries (use install.sh --libs to download)
+kicad-libs/
+
+# Generated examples
+examples/
+
+# Default output directory for schematics
+KiCad/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+test.kicad_sch
+test.svg
+test.md
