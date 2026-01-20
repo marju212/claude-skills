@@ -5,7 +5,7 @@ A collection of reusable Claude Code skills that can be added to any project. Sk
 ## Quick Start
 
 ```bash
-# Clone into your project
+# Clone the repo into your project (as .claude-skills/)
 git clone git://github.com/marju212/claude-skills.git .claude-skills
 
 # Install everything (skills + dependencies + KiCad + libraries)
@@ -15,7 +15,20 @@ git clone git://github.com/marju212/claude-skills.git .claude-skills
 ./.claude-skills/install.sh
 ```
 
-After installation, skills are symlinked to your project's `.claude/skills/` directory where Claude Code can use them.
+**Directory structure after install:**
+```
+your-project/
+├── .claude-skills/      # This repo (source files, install.sh, libraries)
+│   ├── skills/
+│   ├── install.sh
+│   └── ...
+└── .claude/
+    └── skills/          # Symlinks created by install.sh (Claude Code reads from here)
+        ├── electronic-schematics.md → ../.claude-skills/skills/...
+        └── kicad_helper.py → ../.claude-skills/skills/...
+```
+
+The install script symlinks skill files to `.claude/skills/` where Claude Code looks for them.
 
 ## What Are Skills?
 
