@@ -6,7 +6,7 @@ A collection of reusable Claude Code skills that can be added to any project. Sk
 
 ```bash
 # Clone into your project
-git clone https://github.com/your-org/claude-skills.git .claude-skills
+git clone git://github.com/your-org/claude-skills.git .claude-skills
 
 # Install everything (skills + dependencies + KiCad + libraries)
 ./.claude-skills/install.sh --all
